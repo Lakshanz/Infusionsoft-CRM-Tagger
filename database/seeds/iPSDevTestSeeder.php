@@ -32,6 +32,14 @@ class iPSDevTestSeeder extends Seeder
             ]);
         }
 
-
+        $faker = Faker\Factory::create();
+        \App\User::create(
+            [
+                'id' => 1,
+                'name' => $faker->name,
+                'email' => '5d0b38a81c7ae@test.com',
+                'password' => bcrypt($faker->password),
+            ]
+        );
     }
 }
