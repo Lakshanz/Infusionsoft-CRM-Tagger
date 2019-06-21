@@ -13,7 +13,4 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/module_reminder_assigner', 'Api\ModuleReminderController@assignTag');
 Route::post('/module_reminder_assigner', 'Api\ModuleReminderController@assignTag');
-
-Route::get('/add', 'ApiController@exampleCustomer');
